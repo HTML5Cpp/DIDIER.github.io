@@ -32,7 +32,7 @@ body{
 }
 html {
   scroll-behavior: smooth;
-  /* scroll-padding: 0vh; */
+  scroll-padding: 8vh;
   
 }
 .w-20{
@@ -68,6 +68,9 @@ html {
 }
 .vh-80{
   height: 80vh;
+}
+.vh-90{
+  height: 90vh;
 }
 .h-20{
   height: 20% !important;
@@ -109,20 +112,23 @@ b{
 
 
 /* NAV */
-  .title-container i{
-    font-size: 1.5rem;
-  }
-.menu-item-circle{
-  cursor: pointer;
-  aspect-ratio: 1/1;
-  font-size: 1.2rem;
+.menu-link{
   text-decoration: none;
   color: var(--Negro);
-
-  display: flex;
-  justify-self: center;
-  align-items: center;
+  background-color: var(--Blanco);
 }
+  .menu-link i{
+    font-size: 1.5rem;
+  }
+  .menu-link:hover{
+    background-color: var(--Negro);
+    color: var(--Blanco);
+  }
+  .active{
+    background-color: var(--Negro);
+    color: var(--Blanco);
+  }
+
 .btnCV{
   cursor: pointer;
 }

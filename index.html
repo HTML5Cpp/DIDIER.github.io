@@ -28,9 +28,9 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body class="bg-fondo">
-    <section class="container-fluid w-100 h-auto overflow-hidden position-relative">
+    <section class="container-fluid w-100 h-auto overflow-hidden position-relative" >
         <div class="row">
-            <section class="offset-1 col-8 col-md-8 col-lg-8 col-xxl-9 p-0 pt-5 pe-5">
+            <section class="offset-1 col-8 col-md-8 col-lg-8 col-xxl-9 p-0 pt-5 pe-5" data-bs-spy="scroll" data-bs-target="#navbar-didier" data-bs-root-margin="0px 0px -35%" data-bs-offset="0" data-bs-smooth-scroll="true" tabindex="0">
                 <!-- SECTION 1 -->  
                     <section class="w-100 vh-100 d-flex flex-column justify-content-between mb-5 p-0"  id="Didier">
                         <article class="w-100 d-flex justify-content-start align-items-end gap-5 introductionDidier">
@@ -96,18 +96,18 @@
 
                 <!-- SECTION 2 -->
                     <section class="w-100 vh-60 mb-3 card-container" id="Sobre-mi">
-                            <div class="w-100 text-center h-20 rounded-4 py-2">
-                                <div class="row align-items-center h-100">
-                                    <span class="col bg-white info-selector rounded-4 py-3 mx-2 border border-1 border-negro hoverr trans">
+                            <div class="w-100 text-center h-20 rounded-4 py-2 overflow-hidden">
+                                <div class="row h-100 w-100 m-auto gap-3">
+                                    <span class="col bg-white info-selector rounded-4 py-3 border border-1 border-negro hoverr trans">
                                         Sobre mi
                                     </span>
-                                    <span class="col bg-white info-selector rounded-4 py-3 mx-2 border border-1 border-negro hoverr trans">
+                                    <span class="col bg-white info-selector rounded-4 py-3 border border-1 border-negro hoverr trans">
                                         Conocimiento
                                     </span>
-                                    <span class="col bg-white info-selector rounded-4 py-3 mx-2 border border-1 border-negro hoverr trans">
+                                    <span class="col bg-white info-selector rounded-4 py-3 border border-1 border-negro hoverr trans">
                                         Académico
                                     </span>
-                                    <span class="col bg-white info-selector rounded-4 py-3 mx-2 border border-1 border-negro hoverr trans">
+                                    <span class="col bg-white info-selector rounded-4 py-3 border border-1 border-negro hoverr trans">
                                         Experiencia
                                     </span>
                                 </div>
@@ -237,7 +237,7 @@
                                             <div class="date-aca p-0 fs-6 col-2 px-1">2019 - 2021</div>
                                             <div class="title-aca p-0 fs-4 fw-bolder col">Bachillerato: Técnico en informática 
                                                 <br> 
-                                                <small class="fs-6">CUGS Bachillerato</small> 
+                                                <small class="fs-6">IPN CECYT 5 Benito Juárez</small> 
                                             </div>
                                         </div>
                                         
@@ -446,47 +446,40 @@
 
         <!-- NAV --> 
             <aside class="col-3 col-md-3 col-lg-3 col-xxl-2 position-fixed top-0 end-0 p-0 pt-3 pe-3 overflow-hidden ">
-                <nav class="bg-white rounded-4 p-3 w-100 position-sticky">
-                    <div class="nav-contenedor border-1 border-negroLight border-bottom mb-4">
-                        <div class="title-container d-flex justify-content-between">
-                            <h4>Menú</h4>
+                <nav class="w-100 vh-100 d-flex justify-content-between flex-column position-sticky pb-5 navegacionDidier">
+                    <div class="d-flex gap-2 h-auto flex-column" id="navbar-didier">
+                        <a class="w-100 rounded-4 d-flex p-3 menu-link d-flex align-items-center justify-content-between trans" href="#Didier">
+                            <h5 class="m-0">Inicio</h5>
                             <i class='bx bx-right-arrow-alt'></i>
-                        </div> 
-                        <div class="circles-container d-flex justify-content-start align-items-center gap-1 py-1 mb-1">
-                            <a href="#Didier" class="menu-item-circle hoverr border border-1 border-negro rounded-circle p-1 align-self-stretch trans">
-                                <i class='bx bxs-home-alt-2'></i>
-                            </a>
-                            <a href="#Sobre-mi" class="menu-item-circle hoverr border border-1 border-negro rounded-circle p-1 align-self-stretch trans">
-                                <i class='bx bxs-user'></i>
-                            </a>
-                            <a href="#Trabajos" class="menu-item-circle hoverr border-negro border border-1 rounded-circle p-1 align-self-stretch trans">
-                                <i class='bx bxs-briefcase'></i>
-                            </a>
-                            <a href="" class="menu-item-circle hoverr border-negro border border-1 rounded-circle p-1 align-self-stretch trans">
-                                <i class='bx bxs-comment'></i>
-                            </a>
-                        </div>
+                        </a>
+                        <a class="w-100 rounded-4 d-flex p-3 menu-link d-flex align-items-center justify-content-between trans" href="#Sobre-mi">
+                            <h5 class="m-0">Conóceme</h5>
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                        <a class="w-100 rounded-4 d-flex p-3 menu-link d-flex align-items-center justify-content-between trans" href="#Trabajos">
+                            <h5 class="m-0">Trabajos</h5>
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                        <a class="w-100 rounded-4 d-flex p-3 menu-link d-flex align-items-center justify-content-between trans" href="#Hobbies">
+                            <h5 class="m-0">Hobbies</h5>
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
                     </div>
-                    <div class="nav-contenedor border-1 border-negroLight border-bottom mb-4">
-                        <div class="title-container d-flex justify-content-between">
-                            <h4>Social</h4>
-                            <i class='bx bx-right-arrow-alt'></i>
-                        </div>
-                        <div class="circles-container d-flex justify-content-start align-items-center gap-1 py-1 mb-1">
-                            <a href="https://m.facebook.com/octavio.sz.Dunkerque" target="_blank" class="menu-item-circle hoverr border border-1 border-negro rounded-circle p-1 align-self-stretch trans">
+                    
+                    <div class="d-flex gap-2 h-auto flex-column">
+                        <div class="w-100 d-flex gap-2 justify-content-between">
+                            <a href="https://m.facebook.com/octavio.sz.Dunkerque" target="_blank" class="rounded-4 d-flex p-3 menu-link d-flex align-items-center justify-content-between trans">
                                 <i class='bx bxl-facebook'></i>
                             </a>
-                            <a href="https://www.instagram.com/con.d.d.didier/" target="_blank" class="menu-item-circle hoverr border-negro border border-1 rounded-circle p-1 align-self-stretch trans">
+                            <a href="https://www.instagram.com/con.d.d.didier/" target="_blank" class="rounded-4 d-flex p-3 menu-link d-flex align-items-center justify-content-between trans">
                                 <i class='bx bxl-instagram-alt'></i>
                             </a>
-                            <a href="mailto:didiersaucedo@hotmail.com" class="menu-item-circle hoverr border-negro border border-1 rounded-circle p-1 align-self-stretch trans">
-                                <i class='bx bxs-envelope'></i> 
+                            <a href="mailto:didiersaucedo@hotmail.com" class="rounded-4 d-flex p-3 menu-link d-flex align-items-center justify-content-between trans">
+                                <i class='bx bxs-envelope'></i>
                             </a>
                         </div>
-                    </div>
-                    <div class="nav-contenedor">
-                        <div class="title-container d-flex justify-content-between align-items-center btnCV rounded-pill trans" id="btnCV">
-                            <h4 class="m-0">Descargar CV</h4>
+                        <div class="w-100 rounded-4 d-flex p-3 menu-link d-flex align-items-center justify-content-between trans btnCV" id="btnCV">
+                            <h5 class="m-0">Descargar CV</h5>
                             <i class='bx bx-down-arrow-alt'></i>
                         </div>
                     </div>
@@ -508,9 +501,8 @@
         });
         /* NAV */
             ScrollReveal().reveal('.navegacionDidier', { delay: 200, origin: 'right', reset: false });
-            ScrollReveal().reveal('.nav-contenedor', { delay: 400, origin: 'right', interval: 100, reset: false });
+            ScrollReveal().reveal('.menu-link', { delay: 500, origin: 'right', interval: 100, reset: false });
         /* /NAV */
-
 
         /* SECTION 1  */  
             ScrollReveal().reveal('.introductionDidier', { delay: 200, origin: 'top' });
@@ -518,9 +510,13 @@
             ScrollReveal().reveal('.svg-movement', { delay: 200, origin: 'bottom', interval: 100 });
         /* /SECTION 1 */
 
-        /* SECTION 2 */ 
-            
-        /* SECTION 2 */
+        /* SECTION 3 */
+            ScrollReveal().reveal('.work-container', { delay: 200, origin: 'right', interval: 200});
+        /* SECTION 3 */
+
+        /* SECTION 4 */
+        ScrollReveal().reveal('.cardHobbie', { delay: 400, origin: 'bottom', interval: 200});
+        /* SECTION 4 */
     </script>
 </body>
 </html>
