@@ -261,6 +261,9 @@ b{
         align-items: start;
         flex-flow: column nowrap;
       }
+        .info-work h4{
+          font-size: calc(0.8rem + 0.5vw);
+        }
       .etiquetas-container{
         display: flex;
         justify-content: start;
@@ -269,7 +272,7 @@ b{
         gap: 0.5rem;
       }
         .etiquetas{
-          font-size: 80%;
+          font-size: calc(25% + 0.5vw);
         }
           .etiquetas:hover{
             transform: rotateZ(-10deg);
@@ -283,13 +286,10 @@ b{
           scale: 1.1;
         }
         .con-lenguaje{
-          
-          width: 10%;
-          min-width: 2.5rem;
+          width: clamp(5%, 1rem + 4vw, 3.8rem);
+          font-size: calc(0.5rem + 1.5vw);
           position: absolute;
-          transform: translate(-50%,-50%);
           aspect-ratio: 1/1;
-          font-size: 2rem;
         
           display: flex;
           align-items: center;
@@ -301,6 +301,8 @@ b{
         text-decoration: none;
         bottom: 2%;
         right: 2%;
+        z-index: 2;
+        background-color: var(--Blanco);
       }
         .btn-work:hover{
           background-color: var(--Negro);
@@ -338,7 +340,13 @@ b{
 
 
 /* SECTION 4 */
-.cardHobbie{
-  aspect-ratio: 16/9;
+#Hobbies{
+ 
 }
+  .hobbie-cont{
+    min-height: 20vh;
+  }
+    .cardHobbie{
+      
+    }
 /* SECTION 4 */
