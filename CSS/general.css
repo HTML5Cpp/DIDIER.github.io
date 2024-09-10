@@ -100,10 +100,20 @@ html {
   width: 16.66666% !important;
 }
 .mostrar{
-  display: block;
+  display: block !important;
 }
 .ocultar{
-  display: none;
+  display: none !important;
+}
+
+#navMobile{
+  transition:ease-in-out 0.8s;
+}
+.ocu-nav{
+  right: -100%;
+}
+.mos-nav{
+  right: 0%;
 }
 b{
   font-weight: bolder;
@@ -131,7 +141,34 @@ b{
 
 .btnCV{
   cursor: pointer;
+} /*
+.instagram-background{
+  background-image: linear-gradient(var(--Negro));
+  color: var(--Negro);
 }
+.instagram-background:hover{
+  background-image: linear-gradient(90deg, #D300C5, #FF0069, #FF7A00);
+  color: var(--Blanco);
+}
+.facebook-background{
+  background-image: linear-gradient(var(--Negro));
+  color: var(--Negro);
+}
+.facebook-background:hover{
+  background: linear-gradient(to right,#00c6ff,#0072ff);
+  color: var(--Blanco);
+}
+.email-background{  
+  background-image: linear-gradient(var(--Negro));
+  color: var(--Negro);
+}
+.email-background:hover{  
+  background: hsla(40, 94%, 74%, 1);
+
+  background: linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
+  color: var(--Blanco);
+}
+  */
 /* NAV */
 
 
@@ -225,7 +262,6 @@ b{
 
 
 /* SECTION 3 */
-
   .work-container{
     width: 100%;
     height: 100%;
@@ -350,3 +386,84 @@ b{
       
     }
 /* SECTION 4 */
+
+
+
+@media only screen and (max-width: 767px){
+/* GENERAL */
+  .w-35{
+    width: 100% !important;
+  }
+  .z-4{
+    z-index: 4;
+  }
+  .z-5{
+    z-index: 5;
+  }
+/* GENERAL */
+
+
+/* NAV */
+  #menuMobile{
+    right: 3%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: var(--Negro);
+  }
+  #navMobile{
+
+  }
+    .navMobileItem{
+      color: var(--Negro);
+      text-decoration: none;
+      text-align: center;
+      font-weight: bolder;
+    }
+
+    .menuMobile-link{
+      text-decoration: none;
+      color: var(--Negro);
+      background-color: var(--Blanco);
+    }
+      .menuMobile-link i{
+        font-size: 1.5rem;
+      }
+/* NAV */
+
+
+/* SECTION 1 */
+  .principal-header{
+    width: 100%;
+  }
+  .cont-img-yo{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .cont-svg{
+    width: 35%;
+  }
+  .dontsSVG{
+    display: none;
+  }
+/* SECTION 1 */
+
+/* SECTION 2 */
+  .tab-deco{
+    width: 23%;
+  }
+/* SECTION 2 */
+
+/* SECTION 3 */
+  .info-work h4{
+    font-size: calc(1rem + 1vw);
+  }
+  .etiquetas{
+    font-size: calc(50% + 0.5vw);
+  }
+  .con-lenguaje{
+    width: clamp(13%, 1rem + 5vw, 5rem);
+    font-size: calc(1rem + 1.5vw);
+  }
+/* SECTION 3 */
+}
