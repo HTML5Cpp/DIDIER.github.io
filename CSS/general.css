@@ -412,7 +412,7 @@ b{
     color: var(--Negro);
   }
   #navMobile{
-
+    height: 100dvh;
   }
     .navMobileItem{
       color: var(--Negro);
@@ -455,6 +455,9 @@ b{
 /* SECTION 2 */
 
 /* SECTION 3 */
+.info-work{
+  text-wrap: nowrap;
+}
   .info-work h4{
     font-size: calc(1rem + 1vw);
   }
